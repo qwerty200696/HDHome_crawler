@@ -6,8 +6,7 @@ import time
 import logging
 
 '''
-单线程。
-以try_new版本为主，弃。
+单线程稳定版。
 '''
 
 log_file = "hdh_log_1.txt"
@@ -46,6 +45,3 @@ for i in range(START, END):
     saythanks(link)
 
 driver.close()
-# 已经跑的。300
-# 500-4192
-# 5000 -6950-8307

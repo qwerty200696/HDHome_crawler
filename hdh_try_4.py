@@ -95,7 +95,7 @@ if __name__ == "__main__":
             logging.info("multi thread start failed, next!!")
             time.sleep(5)
             continue
-        # 通过移动句柄来说谢谢
+        
         saythanks()
 
         # sleep more

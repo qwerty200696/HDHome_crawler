@@ -115,7 +115,7 @@ class HDH:
         app = QtWidgets.QApplication(sys.argv)
         center = CodeRecognition()
 
-        # 改变输入的图片。
+        # change the code image path
         center.img_path = path
         center.show_code_img()
 
@@ -144,7 +144,7 @@ class HDH:
                 logging.info("multi thread start failed, next!!")
                 time.sleep(5)
                 continue
-            # 通过移动句柄来说谢谢
+            
             self.saythanks()
 
             # sleep more
@@ -161,7 +161,6 @@ class HDH:
                 logging.info(self.driver.current_url + "normal refresh,{}bonus is{}now...".format(usrName, bonus))
                 time.sleep(1)
             t = t + 1
-        # self.driver.quit()
         logging.info("{}: loop finished.".format(
             time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))))
 
