@@ -74,8 +74,8 @@ class HDH:
             f.write(img)
         rec_code = self.code_recog(img_name)
 
-        self.driver.find_element_by_name("username").send_keys("wangwlj")
-        self.driver.find_element_by_name("password").send_keys("351841691")
+        self.driver.find_element_by_name("username").send_keys("*********")
+        self.driver.find_element_by_name("password").send_keys("*********")
         self.driver.find_element_by_name("imagestring").send_keys(rec_code)
         self.driver.find_element_by_xpath('//input[@type="submit"]').click()
 
