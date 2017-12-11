@@ -9,10 +9,10 @@ import logging
 单线程稳定版。
 '''
 
-log_file = "hdh_log_1.txt"
+log_file = "xxx_log_1.txt"
 logging.basicConfig(filename=log_file, level=logging.INFO)
 
-login_url = "http://hdhome.org/login.php"
+login_url = "http://xxxx.org/login.php"
 driver = webdriver.Chrome()
 
 driver.get(login_url)
@@ -41,7 +41,7 @@ def saythanks(link):
 START = 6951
 END = 10000
 for i in range(START, END):
-    link = "http://hdhome.org/details.php?id={}&hit=1".format(i)
+    link = "http://xxxx.xxx/details.php?id={}&hit=1".format(i)
     saythanks(link)
 
 driver.close()

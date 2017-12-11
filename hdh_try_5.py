@@ -44,8 +44,8 @@ class HDH:
         pass
 
     def log_in(self):
-        login_url = "http://hdhome.org/login.php"
-        login_failed_url = "http://hdhome.org/takelogin.php"
+        login_url = "http://xxxx/login.php"
+        login_failed_url = "http://xxxx/takelogin.php"
         self.driver.get(login_url)
         # noinspection PyBroadException
         try:
@@ -130,7 +130,7 @@ class HDH:
         for i in range(start, end, thread_num):
 
             pool = Pool(thread_num)
-            all_links = ["http://hdhome.org/details.php?id={}&hit=1".format(i) for i in range(i, i + thread_num)]
+            all_links = ["http://xxxx.xxx/details.php?id={}&hit=1".format(i) for i in range(i, i + thread_num)]
             # all_links.append(self.driver)
             print(all_links)
             pool.map(open_url, all_links)
@@ -170,6 +170,6 @@ if __name__ == "__main__":
     # display.start()
 
     driver = webdriver.Firefox()
-    log_file = "hdh_log_1.txt"
+    log_file = "xxx_log_1.txt"
     logging.basicConfig(filename=log_file, level=logging.INFO)
     h = HDH()
